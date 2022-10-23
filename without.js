@@ -17,12 +17,11 @@ const eqArrays = function (arr1, arr2) {
 
 const without = function(arr1,arr2) {
   let outputArray = []
-  for (let i = 0; i < arr1.length; i++){
-    if( !arr2.includes(arr1[i])){
+  for (let i = 0; i < arr1.length; i++) {
+    if( !arr2.includes(arr1[i])) {
       outputArray.push(arr1[i])
     }
   }
-  
   return outputArray
 }
 
