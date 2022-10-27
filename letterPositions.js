@@ -7,7 +7,7 @@ const letterPositions = function(sentence) {
   const results = {};
   
   // logic to update results here
-
+  // how i was doing it originally, Was on the right path. 
   // for (const character of sentence) {
   //   // for( let i = 0; i < character.length; i++){
   //   //   if (results[character]) {
