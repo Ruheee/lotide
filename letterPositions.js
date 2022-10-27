@@ -2,11 +2,23 @@
  * 
  */
 
-
 const letterPositions = function(sentence) {
   const results = {};
   
-  // logic to update results here
+ 
+  const temp = sentence.split("")
+  temp.forEach((char,idx) => {
+    if (results[char]) { //results = {"c": [0, 5]}
+      results[char].push(idx)
+    } else if (char !== " ") {
+      results[char] = [idx]
+    }
+    
+  })
+  return results;
+}
+  
+ // logic to update results here
   // how i was doing it originally, Was on the right path. 
   // for (const character of sentence) {
   //   // for( let i = 0; i < character.length; i++){
@@ -21,20 +33,6 @@ const letterPositions = function(sentence) {
     
   
   // }
-  const temp = sentence.split("")
-  temp.forEach((char,idx) => {
-    if (results[char]) { //results = {"c": [0, 5]}
-      results[char].push(idx)
-    } else if (char !== " ") {
-      results[char] = [idx]
-    }
-    
-  })
-  return results;
-}
-  
-
-
 const eqArrays = function (arr1, arr2) {
   for(let i  = 0; i < arr1.length; i++) {
     if(arr1[i] !== arr2[i]) {
@@ -43,7 +41,6 @@ const eqArrays = function (arr1, arr2) {
   }
   return true;
 }
-
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
