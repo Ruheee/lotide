@@ -27,5 +27,5 @@ const key = findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2)// => "noma"
 
-console.log(assertEqual(key), true)
+console.log(assertEqual(key), "noma")
 
