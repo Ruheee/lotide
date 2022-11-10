@@ -1,14 +1,11 @@
-const middle = function (array) {
-  const mid = array.length / 2;
-  if (array.length % 2 === 1) {
-    return array[Math.floor(mid)];
+const middle = arr => {
+  const midIndexArr = Math.floor(arr.length / 2);
+  if (arr.length % 2 === 0) {
+    return arr.slice(midIndexArr - 1, midIndexArr + 1);
   } else {
-    return [
-      array[mid - 1],
-      array[mid],
-    ];
+    return arr.slice(midIndexArr, midIndexArr + 1);
   }
-}
+};
 
 
 module.exports = middle;
