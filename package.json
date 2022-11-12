@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@dantas001/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A testing program ",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ruheee/lotide.git"
+    "url": "git+https://github.com/ruheee/lotide.git"
   },
-  "author": "",
+  "author": "Rui Dantas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ruheee/lotide/issues"
+    "url": "https://github.com/ruheee/lotide/issues"
   },
-  "homepage": "https://github.com/Ruheee/lotide#readme",
+  "homepage": "https://github.com/ruheee/lotide#readme",
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^9.2.2"
